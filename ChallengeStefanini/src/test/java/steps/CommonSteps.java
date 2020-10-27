@@ -29,16 +29,16 @@ public class CommonSteps implements En {
             );
         });
 
-        And("fill in the required data", () -> {
-            user = User.withName("User");
+        And("fill in the required data with {string}", (String name) -> {
+            CommonSteps.user = User.withName(name);
             actor().attemptsTo(
-                    FillMandatoryData.fill(user)
+                    FillMandatoryData.fill(CommonSteps.user)
             );
-            DataMassParser.saveObjectWithName("User", CommonSteps.user);
+            DataMassParser.saveObjectWithName(name, CommonSteps.user);
         });
         And("fill in the optional data", () -> {
             actor().attemptsTo(
-                    FillOptionalData.fill(user)
+                    FillOptionalData.fill(CommonSteps.user)
             );
         });
 

@@ -122,15 +122,6 @@
             <version>${serenity.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.oracle.jdbc</groupId>
-            <artifactId>ojdbc8</artifactId>
-            <scope>system</scope>
-            <version>12.2.0.1</version>
-            <systemPath>${project.basedir}/src/lib/ojdbc8.jar</systemPath>
-            <type>jar</type>
-            <optional>false</optional>
-        </dependency>
-        <dependency>
             <groupId>com.jcabi</groupId>
             <artifactId>jcabi-ssh</artifactId>
             <version>1.6.1</version>

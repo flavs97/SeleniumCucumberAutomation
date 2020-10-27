@@ -13,6 +13,7 @@ public class FillOptionalData implements Task, IsSilent {
     User user;
 
     FillOptionalData(User user) {
+
         this.user = user;
     }
 

@@ -28,7 +28,7 @@ public class FillMandatoryData implements Task, IsSilent {
                 Enter.theValue(user.name).into(InterzoidElements.INPUT_FIRST_NAME),
                 Enter.theValue(user.lastename).into(InterzoidElements.INPUT_LAST_NAME),
                 Enter.theValue(user.getEmail()).into(InterzoidElements.INPUT_EMAIL),
-                Enter.theValue(user.email).into(InterzoidElements.INPUT_EMAIL),
+                Enter.theValue(user.email).into(InterzoidElements.INPUT_CONFIR_EMAIL),
                 Enter.theValue(user.password).into(InterzoidElements.INPUT_PASSWORD),
                 Enter.theValue(user.password).into(InterzoidElements.INPUT_CONFIR_PASSWORD)
         );
