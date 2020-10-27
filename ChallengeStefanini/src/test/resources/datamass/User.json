@@ -1,0 +1,19 @@
+{
+  "User": {
+    "name": "Flaviane",
+    "lastename": "Siqueira",
+    "email": "",
+    "password": "123456789",
+    "title": "Lorem Ipsum",
+    "company": "Test",
+    "phone": "4287354252356",
+    "address1": "Street fake, 123",
+    "address2": "Street three, 487",
+    "city": "Recife",
+    "state": "Pernambuco",
+    "postal": "4578962",
+    "country": "Brazil",
+    "referral": "other",
+    "question": "I dont now"
+  }
+}
