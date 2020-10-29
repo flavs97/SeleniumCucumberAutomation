@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: Test 2 UI
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.194 s <<< FAILURE! - in Test 2 UI
+Buy a product(Test 2 UI)  Time elapsed: 0.194 s  <<< ERROR!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\flaviane.c.siqueira\Documents\intelliJ\ChallengeStefanini\src\test\java\resources\drivers\windows\chromedriver.exe
+
