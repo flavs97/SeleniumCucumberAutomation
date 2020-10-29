@@ -40,7 +40,7 @@ public class GetWeather implements Task, IsSilent {
       //  String getUrl = (url+"?license="+paramlincense+"&city="+paramcity+"&state="+paramstate);
         LOGGER.info("Searching for weather information");
         actor().attemptsTo(
-                Post.to(url).with(
+                Get.resource(url).with(
                         request ->
                                 request.given()
                                         .param("?license="+paramlincense)
