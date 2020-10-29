@@ -1,16 +1,15 @@
 package tasks.api;
 
 import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import helper.GetSerenityConfig;
-import io.restassured.http.ContentType;
 import net.serenitybdd.markers.IsSilent;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Get;
+import net.serenitybdd.screenplay.rest.interactions.Post;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static model.CastOfActors.actor;
 import static net.serenitybdd.rest.SerenityRest.lastResponse;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -38,12 +37,15 @@ public class GetWeather implements Task, IsSilent {
         System.out.println(paramcity);
         System.out.println(paramlincense);
         System.out.println(paramstate);
-        String getUrl = (url+"?license="+paramlincense+"&city="+paramcity+"&state="+paramstate);
+      //  String getUrl = (url+"?license="+paramlincense+"&city="+paramcity+"&state="+paramstate);
         LOGGER.info("Searching for weather information");
-        actor.attemptsTo(
-                Get.resource(getUrl).with(
+        actor().attemptsTo(
+                Post.to(url).with(
                         request ->
                                 request.given()
+                                        .param("?license="+paramlincense)
+                                        .param("&city="+paramcity)
+                                        .param("&state="+paramstate)
                                 .when()
                 ));
         if(lastResponse().statusCode() == 200) {
