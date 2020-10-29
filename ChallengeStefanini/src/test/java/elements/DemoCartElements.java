@@ -23,6 +23,6 @@ public class DemoCartElements {
     public static By CHECK_TERMS = By.xpath("//*[@id=\"id_accept_terms5f9a350b48596\"]");
     public static By CHECK_CAPTCHA = By.xpath("/html/body/div[2]/div[3]/div[1]/div/div/span/div[1]");
     public static By BTN_ORDER = By.xpath("//*[@id=\"litecheckout_place_order\"]");
-    public static By ASSERT_SUCESS = By.xpath("//p[contains(text(), 'Congratulations! Your order has been successfully placed.')]");
+    public static By ASSERT_SUCESS = By.xpath("/html/body/div[2]/div[4]/div[3]/div/div/div/div[2]/h1");
 
 }
