@@ -11,7 +11,7 @@ import utils.WebDriverFactory;
 public class DemoCartAction extends DemoCartElements {
 
     public static void homePage(){
-        WebDriverFactory.getWaitDriver().until(ExpectedConditions.presenceOfAllElementsLocatedBy(DemoCartElements.ASSERT_HOME));
+        WebDriverFactory.getWaitDriver().until(ExpectedConditions.visibilityOfElementLocated(DemoCartElements.ASSERT_HOME));
     }
 
     public static void inputSearch(String search){
@@ -33,6 +33,7 @@ public class DemoCartAction extends DemoCartElements {
             }
         }
     }
+
 
     public static void clickAddCart(){
         WebDriverFactory.getWaitDriver().until(ExpectedConditions.visibilityOfElementLocated(DemoCartElements.BTN_ADD_CART)).isDisplayed();

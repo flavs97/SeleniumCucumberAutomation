@@ -9,7 +9,7 @@ public class PropertiesReader {
 
     public String getPropValue(String propName) throws IOException {
         Properties prop = new Properties();
-        String propFileName = "config.properties";
+        String propFileName = "serenity.conf";
 
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
         if (inputStream != null) {

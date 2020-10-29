@@ -12,6 +12,7 @@
         <serenity.version>2.0.88</serenity.version>
         <serenity.maven.version>2.0.82</serenity.maven.version>
         <serenity.cucumber.version>1.0.21</serenity.cucumber.version>
+        <junit.version>4.12</junit.version>
         <cucumber.version>4.2.0</cucumber.version>
         <encoding>UTF-8</encoding>
         <parallel.tests>1</parallel.tests>
@@ -74,7 +75,8 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
@@ -140,6 +142,11 @@
             <groupId>org.example</groupId>
             <artifactId>AutomationQA_Serenity</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
         </dependency>
     </dependencies>
 

@@ -15,7 +15,7 @@ import java.util.Set;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"steps"},
-        tags = {"not @skip", "not @api", "@teste1"},
+        tags = {"not @skip", "not @api", "@teste2"},
         plugin = {"pretty"},
         monochrome = true)
 

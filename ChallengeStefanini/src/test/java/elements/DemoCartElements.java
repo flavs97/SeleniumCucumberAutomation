@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class DemoCartElements {
 
-    public static By ASSERT_HOME = By.xpath("//*[@id=\"det_img_1170067898\"]");
+    public static By ASSERT_HOME = By.xpath("//img[@id='det_img_1736599523']");
     public static By INPUT_SEARCH = By.xpath("//*[@id=\"search_input\"]");
     public static By BTN_SEARCH = By.xpath("/html/body/div[2]/div[4]/div[2]/div/div[1]/div[3]/div/div[1]/div/div/form/button");
     public static By ASSERT_NO_PRODUCT = By.xpath("/html/body/div[2]/div[4]/div[3]/div/div[2]/div/div/div/div/p");

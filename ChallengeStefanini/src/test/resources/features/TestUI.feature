@@ -2,8 +2,8 @@
 
 Feature: Test 2 UI
 
-  @teste1
-  Scenario : Buy a product
+  @teste2
+  Scenario: Buy a product
     Given open url - Demo Store
     When search for product "Shirt"
     And click on product
