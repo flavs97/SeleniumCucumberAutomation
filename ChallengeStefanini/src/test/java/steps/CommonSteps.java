@@ -1,27 +1,68 @@
 package steps;
 
 import cucumber.api.java8.En;
-import model.DataMassParser;
-import models.User;
 import net.serenitybdd.screenplay.actions.Open;
 import tasks.api.GetWeather;
-import tasks.web.FillMandatoryData;
-import tasks.web.FillOptionalData;
-import tasks.web.FinalizeRegistration;
+
 import static model.CastOfActors.actor;
 
 
 public class CommonSteps implements En {
 
-   static User user;
+
    static String license;
     public CommonSteps() {
 
-        Given("open url - Interzoid", () -> {
+        Given("open url - Demo Store", () -> {
             actor().attemptsTo(
                     Open.browserOn().thePageNamed("interzoid.url")
             );
         });
+
+        And("search for product {string}", (String product) -> {
+
+        });
+
+        And("click on product", () -> {
+
+        });
+
+        And("add to cart", () -> {
+
+        });
+
+        And("go to cart", () -> {
+
+        });
+
+        And("Valid product and price", () -> {
+
+        });
+
+        And("proceed to checkout", () -> {
+
+        });
+
+        And("fill in additional information", () -> {
+
+        });
+
+        And("select and fill payment methods", () -> {
+
+        });
+
+        And("accept the terms and click on the captcha", () -> {
+
+        });
+
+        And("Finalize order", () -> {
+
+        });
+
+        And("Valid if purchase completed successfully", () -> {
+
+        });
+
 
         And("have the License Key - {string}", (String key) -> {
             CommonSteps.license = key;
@@ -32,25 +73,6 @@ public class CommonSteps implements En {
         And("get weather with {string} {string}", (String city, String state) -> {
             actor().attemptsTo(
                     GetWeather.retrieve(city, state, license)
-            );
-        });
-
-        And("fill in the required data", () -> {
-            CommonSteps.user = User.withName("User");
-            actor().attemptsTo(
-                    FillMandatoryData.fill(CommonSteps.user)
-            );
-            DataMassParser.saveObjectWithName("User", CommonSteps.user);
-        });
-        And("fill in the optional data", () -> {
-            actor().attemptsTo(
-                    FillOptionalData.fill(CommonSteps.user)
-            );
-        });
-
-        And("finish registration", () -> {
-            actor().attemptsTo(
-                    FinalizeRegistration.click()
             );
         });
 
