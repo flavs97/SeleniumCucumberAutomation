@@ -18,10 +18,10 @@ public class InterzoidElements {
     public static final Target INPUT_CONFIR_EMAIL = Target.the("Field for confirm email input").locatedBy("//*[@id=\"confirmemail\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
     public static final Target INPUT_PASSWORD = Target.the("Field for password input").locatedBy("//*[@id=\"password\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
     public static final Target INPUT_CONFIR_PASSWORD = Target.the("Field for confirm password input").locatedBy("//*[@id=\"confirmpassword\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
-    public static final Target INPUT_TITLE = Target.the("Field for title input").locatedBy("//*[@id=\"title\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
-    public static final Target INPUT_COMPANY = Target.the("Field for campany input").locatedBy("//*[@id=\"company\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
+    public static final Target INPUT_TITLE = Target.the("Field for title input").locatedBy("//input[@id=\"title\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
+    public static final Target INPUT_COMPANY = Target.the("Field for company input").locatedBy("//*[@id=\"company\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
     public static final Target INPUT_PHONE = Target.the("Field for phone input").locatedBy("//*[@id=\"phone\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
-    public static final Target INPUT_ADDRESS1 = Target.the("Field for address 1 input").locatedBy("///*[@id=\"address1\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
+    public static final Target INPUT_ADDRESS1 = Target.the("Field for address 1 input").locatedBy("//*[@id=\"address1\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
     public static final Target INPUT_ADDRESS2 = Target.the("Field for address 2 input").locatedBy("//*[@id=\"address2\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
     public static final Target INPUT_CITY = Target.the("Field for city input").locatedBy("//*[@id=\"city\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
     public static final Target INPUT_STATE = Target.the("Field for state input").locatedBy("//*[@id=\"state\"]").waitingForNoMoreThan(Duration.ofSeconds(60));
